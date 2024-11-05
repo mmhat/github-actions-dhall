@@ -14,35 +14,35 @@ let Map/Entry =
       https://prelude.dhall-lang.org/v23.0.0/Map/Entry.dhall
         sha256:f334283bdd9cd88e6ea510ca914bc221fc2dab5fb424d24514b2e0df600d5346
 
-let objectFrom = ./utils/objectFrom.dhall
+let objectFrom = ../Utils/objectFrom.dhall
 
-let orNull = ./utils/orNull.dhall
+let orNull = ../Utils/orNull.dhall
 
-let Workflow = ../types/Workflow.dhall
+let Workflow = ./Type.dhall
 
-let Env = ../types/Env.dhall
+let Env = ../Env/Type.dhall
 
-let Env/toJSON = ./Env.dhall
+let Env/toJSON = ../Env/toJSON.dhall
 
-let Concurrency = ../types/Concurrency.dhall
+let Concurrency = ../Concurrency/Type.dhall
 
-let Concurrency/toJSON = ./Concurrency.dhall
+let Concurrency/toJSON = ../Concurrency/toJSON.dhall
 
-let Defaults = ../types/Defaults.dhall
+let Defaults = ../Defaults/Type.dhall
 
-let Defaults/toJSON = ./Defaults.dhall
+let Defaults/toJSON = ../Defaults/toJSON.dhall
 
-let Job = ../types/Job.dhall
+let Job = ../Job/Type.dhall
 
-let Job/toJSON = ./Job.dhall
+let Job/toJSON = ../Job/toJSON.dhall
 
-let On/toJSON = ./On.dhall
+let On/toJSON = ../On/toJSON.dhall
 
-let Permission = ../types/Permission.dhall
+let Permission = ../Permission/Type.dhall
 
-let PermissionAccess = ../types/PermissionAccess.dhall
+let PermissionAccess = ../PermissionAccess/Type.dhall
 
-let PermissionAccess/toJSON = ./PermissionAccess.dhall
+let PermissionAccess/toJSON = ../PermissionAccess/toJSON.dhall
 
 let toJSON =
       \(input : Workflow) ->

@@ -6,23 +6,23 @@ let Map =
       https://prelude.dhall-lang.org/v23.0.0/Map/Type.dhall
         sha256:210c7a9eba71efbb0f7a66b3dcf8b9d3976ffc2bc0e907aadfb6aa29c333e8ed
 
-let objectFrom = ../utils/objectFrom.dhall
+let objectFrom = ../../Utils/objectFrom.dhall
 
-let orNull = ../utils/orNull.dhall
+let orNull = ../../Utils/orNull.dhall
 
-let WorkflowCall = ../../types/events/WorkflowCall.dhall
+let WorkflowCall = ./Type.dhall
 
-let Input = ../../types/Input.dhall
+let Input = ../../Input/Type.dhall
 
-let Input/toJSON = ../Input.dhall
+let Input/toJSON = ../../Input/toJSON.dhall
 
-let Output = ../../types/Output.dhall
+let Output = ../../Output/Type.dhall
 
-let Output/toJSON = ../Output.dhall
+let Output/toJSON = ../../Output/toJSON.dhall
 
-let Secret = ../../types/Secret.dhall
+let Secret = ../../Secret/Type.dhall
 
-let Secret/toJSON = ../Secret.dhall
+let Secret/toJSON = ../../Secret/toJSON.dhall
 
 let toJSON
     : WorkflowCall -> JSON.Type

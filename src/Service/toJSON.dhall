@@ -2,19 +2,19 @@ let JSON =
       https://prelude.dhall-lang.org/v23.0.0/JSON/package.dhall
         sha256:5f98b7722fd13509ef448b075e02b9ff98312ae7a406cf53ed25012dbc9990ac
 
-let arrayFrom = ./utils/arrayFrom.dhall
+let arrayFrom = ../Utils/arrayFrom.dhall
 
-let orNull = ./utils/orNull.dhall
+let orNull = ../Utils/orNull.dhall
 
-let Service = ../types/Service.dhall
+let Service = ./Type.dhall
 
-let Credentials = ../types/Credentials.dhall
+let Credentials = ../Credentials/Type.dhall
 
-let Credentials/toJSON = ./Credentials.dhall
+let Credentials/toJSON = ../Credentials/toJSON.dhall
 
-let Env = ../types/Env.dhall
+let Env = ../Env/Type.dhall
 
-let Env/toJSON = ./Env.dhall
+let Env/toJSON = ../Env/toJSON.dhall
 
 let toJSON
     : Service -> JSON.Type

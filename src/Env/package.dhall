@@ -4,4 +4,7 @@
 , default =
     ./default.dhall
       sha256:65c3a31cb2501204e0aba82fa40fde4e9ceeaa55c132a3a82a55a3ec0045254a
+, toJSON =
+    ./toJSON.dhall
+      sha256:66a4ca966e805ff1da369041bde29b4d850700d61ab00f1ce182d95bb07c88f1
 }

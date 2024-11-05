@@ -2,59 +2,59 @@ let JSON =
       https://prelude.dhall-lang.org/v23.0.0/JSON/package.dhall
         sha256:5f98b7722fd13509ef448b075e02b9ff98312ae7a406cf53ed25012dbc9990ac
 
-let arrayFrom = ./utils/arrayFrom.dhall
+let arrayFrom = ../Utils/arrayFrom.dhall
 
-let orNull = ./utils/orNull.dhall
+let orNull = ../Utils/orNull.dhall
 
-let On = ../types/On.dhall
+let On = ./Type.dhall
 
-let Push = ../types/events/Push.dhall
+let Push = ../Event/Push/Type.dhall
 
-let Push/toJSON = ./events/Push.dhall
+let Push/toJSON = ../Event/Push/toJSON.dhall
 
-let PullRequest = ../types/events/PullRequest.dhall
+let PullRequest = ../Event/PullRequest/Type.dhall
 
-let PullRequest/toJSON = ./events/PullRequest.dhall
+let PullRequest/toJSON = ../Event/PullRequest/toJSON.dhall
 
-let PullRequestReview = ../types/events/PullRequestReview.dhall
+let PullRequestReview = ../Event/PullRequestReview/Type.dhall
 
-let PullRequestReview/toJSON = ./events/PullRequestReview.dhall
+let PullRequestReview/toJSON = ../Event/PullRequestReview/toJSON.dhall
 
-let Delete = ../types/events/Delete.dhall
+let Delete = ../Event/Delete/Type.dhall
 
-let Delete/toJSON = ./events/Delete.dhall
+let Delete/toJSON = ../Event/Delete/toJSON.dhall
 
-let Schedule = ../types/events/Schedule.dhall
+let Schedule = ../Event/Schedule/Type.dhall
 
-let Schedule/toJSON = ./events/Schedule.dhall
+let Schedule/toJSON = ../Event/Schedule/toJSON.dhall
 
-let RepositoryDispatch = ../types/events/RepositoryDispatch.dhall
+let RepositoryDispatch = ../Event/RepositoryDispatch/Type.dhall
 
-let RepositoryDispatch/toJSON = ./events/RepositoryDispatch.dhall
+let RepositoryDispatch/toJSON = ../Event/RepositoryDispatch/toJSON.dhall
 
-let WorkflowCall = ../types/events/WorkflowCall.dhall
+let WorkflowCall = ../Event/WorkflowCall/Type.dhall
 
-let WorkflowCall/toJSON = ./events/WorkflowCall.dhall
+let WorkflowCall/toJSON = ../Event/WorkflowCall/toJSON.dhall
 
-let WorkflowDispatch = ../types/events/WorkflowDispatch.dhall
+let WorkflowDispatch = ../Event/WorkflowDispatch/Type.dhall
 
-let WorkflowDispatch/toJSON = ./events/WorkflowDispatch.dhall
+let WorkflowDispatch/toJSON = ../Event/WorkflowDispatch/toJSON.dhall
 
-let WorkflowRun = ../types/events/WorkflowRun.dhall
+let WorkflowRun = ../Event/WorkflowRun/Type.dhall
 
-let WorkflowRun/toJSON = ./events/WorkflowRun.dhall
+let WorkflowRun/toJSON = ../Event/WorkflowRun/toJSON.dhall
 
-let Release = ../types/events/Release.dhall
+let Release = ../Event/Release/Type.dhall
 
-let Release/toJSON = ./events/Release.dhall
+let Release/toJSON = ../Event/Release/toJSON.dhall
 
-let MergeGroup = ../types/events/MergeGroup.dhall
+let MergeGroup = ../Event/MergeGroup/Type.dhall
 
-let MergeGroup/toJSON = ./events/MergeGroup.dhall
+let MergeGroup/toJSON = ../Event/MergeGroup/toJSON.dhall
 
-let PullRequestTarget = ../types/events/PullRequestTarget.dhall
+let PullRequestTarget = ../Event/PullRequestTarget/Type.dhall
 
-let PullRequestTarget/toJSON = ./events/PullRequestTarget.dhall
+let PullRequestTarget/toJSON = ../Event/PullRequestTarget/toJSON.dhall
 
 let toJSON
     : On -> JSON.Type

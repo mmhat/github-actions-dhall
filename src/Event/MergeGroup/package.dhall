@@ -7,4 +7,10 @@
 , default =
     ./default.dhall
       sha256:61de39fb02b49bb17e966f3d22d769599874c1f98321b3accaffcbe3b9025b2b
+, statusToJSON =
+    ./statusToJSON.dhall
+      sha256:a3eb77cd364cb0b24b7c6a6d026be4d26addef42206ed39d05753af25323cc06
+, toJSON =
+    ./toJSON.dhall
+      sha256:2d55644240a4656d51281857d3033bdaa441a010c95d465fd7899c41adfe81b9
 }

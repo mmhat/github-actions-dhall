@@ -6,19 +6,19 @@ let Map =
       https://prelude.dhall-lang.org/v23.0.0/Map/Type.dhall
         sha256:210c7a9eba71efbb0f7a66b3dcf8b9d3976ffc2bc0e907aadfb6aa29c333e8ed
 
-let objectFrom = ./utils/objectFrom.dhall
+let objectFrom = ../Utils/objectFrom.dhall
 
-let orNull = ./utils/orNull.dhall
+let orNull = ../Utils/orNull.dhall
 
-let Step = ../types/Step.dhall
+let Step = ./Type.dhall
 
-let Env = ../types/Env.dhall
+let Env = ../Env/Type.dhall
 
-let Env/toJSON = ./Env.dhall
+let Env/toJSON = ../Env/toJSON.dhall
 
-let Strategy = ../types/Strategy.dhall
+let Strategy = ../Strategy/Type.dhall
 
-let Strategy/toJSON = ./Strategy.dhall
+let Strategy/toJSON = ../Strategy/toJSON.dhall
 
 let toJSON
     : Step -> JSON.Type

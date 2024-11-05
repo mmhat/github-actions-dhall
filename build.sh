@@ -10,15 +10,6 @@ is-record-type () {
 
 declare -a schema_files=()
 
-for f in $(find toJSON -type f -name '*.dhall' -printf '%P\n'); do
-    echo $f
-    if [[ -f "src/${f%.dhall}/Type.dhall" ]]; then
-        git mv "toJSON/$f" "src/${f%.dhall}/toJSON.dhall"
-    fi
-done
-
-exit 0
-
 for type_file in $(find src -type f -name 'Type.dhall'); do
     c1="$(dhall --file "${type_file}" | tr -d '\n' | cut -c 1)"
     if is-record-type "${type_file}"; then
