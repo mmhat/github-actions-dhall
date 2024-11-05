@@ -1,4 +1,4 @@
-    ./src/schemas.dhall.dhall
+    ./src/schemas.dhall
       sha256:a83606c62b5bcb1d807446d713a6cb458e5fd3d1f3517cdd212228cb2971ee18
 /\  { steps =
         ./steps.dhall
