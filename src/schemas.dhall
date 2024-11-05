@@ -1,0 +1,29 @@
+{ Concurrency = ./Concurrency.dhall
+, Container = ./Container.dhall
+, Credentials = ./Credentials.dhall
+, Defaults = ./Defaults.dhall
+, Event =
+  { Delete = ./Event/Delete.dhall
+  , MergeGroup = ./Event/MergeGroup.dhall
+  , PullRequest = ./Event/PullRequest.dhall
+  , PullRequestReview = ./Event/PullRequestReview.dhall
+  , PullRequestTarget = ./Event/PullRequestTarget.dhall
+  , Push = ./Event/Push.dhall
+  , Release = ./Event/Release.dhall
+  , RepositoryDispatch = ./Event/RepositoryDispatch.dhall
+  , Schedule = ./Event/Schedule.dhall
+  , WorkflowCall = ./Event/WorkflowCall.dhall
+  , WorkflowDispatch = ./Event/WorkflowDispatch.dhall
+  , WorkflowRun = ./Event/WorkflowRun.dhall
+  }
+, Input = ./Input.dhall
+, Job = ./Job.dhall
+, JobEnv = ./JobEnv.dhall
+, On = ./On.dhall
+, Output = ./Output.dhall
+, Secret = ./Secret.dhall
+, Service = ./Service.dhall
+, Step = ./Step.dhall
+, Strategy = ./Strategy.dhall
+, Workflow = ./Workflow.dhall
+}
