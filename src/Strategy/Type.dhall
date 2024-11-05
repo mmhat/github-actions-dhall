@@ -1,4 +1,6 @@
-{ matrix : List { mapKey : Text, mapValue : List Text }
-, fail-fast : Optional Bool
-, max-parallel : Optional Natural
-}
+let Matrix = ../Matrix/Type.dhall
+
+in  { matrix : Matrix
+    , fail-fast : Optional Bool
+    , max-parallel : Optional Natural
+    }

@@ -10,16 +10,14 @@ let orNull = ../Utils/orNull.dhall
 
 let Strategy = ./Type.dhall
 
+let Matrix/toJSON = ../Matrix/toJSON.dhall
+
 let toJSON
     : Strategy -> JSON.Type
     = \(input : Strategy) ->
         JSON.object
           ( toMap
-              { matrix =
-                  objectFrom
-                    (List Text)
-                    (arrayFrom Text JSON.string)
-                    input.matrix
+              { matrix = Matrix/toJSON input.matrix
               , fail-fast = orNull Bool JSON.bool input.fail-fast
               , max-parallel = orNull Natural JSON.natural input.max-parallel
               }
